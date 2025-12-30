@@ -1,0 +1,11 @@
+- name: Playlevel Variables
+  hosts: local
+  connection: local
+  vars: 
+    Course: Devops
+    Client: Info
+    Name: vamsi
+  tasks:
+  - name: print the course Info
+    ansible.builtin.debug:
+      msg: "CourseName {{ Course}} ,Client {{ Client}}, Name {{Name}}"
