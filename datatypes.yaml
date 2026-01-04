@@ -14,5 +14,5 @@
       cm : ansible
   tasks:
   - name : print course Info 
-    ansible.builtin.dubug:
+    ansible.builtin.debug:
       msg : "Couse name :{{course}} Duration {{Duration}}, is it live {{is_live}} tools are {{tools}} ,concepts are {{concepts}}"
